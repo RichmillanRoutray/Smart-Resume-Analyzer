@@ -9,3 +9,4 @@ pdfminer.six
 spacy
 scikit-learn
 reportlab
+langchain_groq
