@@ -3,11 +3,12 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
+import streamlit as st
 
 load_dotenv()
 
 def analyze_match_with_llm(resume_text, job_description_text):
-    api_key = os.environ.get("GROQ_API_KEY")
+    api_key = st.secrets["api"]["GROQ_API_KEY"]
     if not api_key:
         raise ValueError("GROQ_API_KEY not found in environment variables.")
 
