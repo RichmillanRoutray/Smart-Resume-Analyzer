@@ -27,7 +27,7 @@ Job Description:
 """)
 
     llm = ChatGroq(
-        model="llama-3.3-70b-versatile",
+        model="llama3-70b-8192",
         temperature=0.3,
         api_key=api_key
     )
